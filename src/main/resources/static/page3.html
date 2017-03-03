@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  data-ng-app="angularChartApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="webjars/angularjs/1.6.2/angular.min.js"></script>
+<script src="webjars/chartjs/2.4.0/Chart.min.js"></script>
+<script src="webjars/angular-chart.js/1.1.1/angular-chart.min.js"></script>
+<script type="text/javascript" src="js/charts/ac.js"></script>
+</head>
+<body class="container-fluid ">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <div class="panel-title text-center">AngularJS Charts</div>
+    </div>
+    <div class="panel-body container-fluid">
+        <section>
+            <div class="row well">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <section data-ng-controller="angularPieChartController" class="">
+                        <div class="row lead">
+                            <div class="col-md-12 text-center">Pie Chart</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <canvas id="pie" class="chart chart-pie" chart-data="data" 
+                                        chart-options="optionsPie" chart-labels="labels"
+                                        chart-colors="colorsPie"  
+                                        chart-click="clickme"  chart-click="onClickSlice"
+                                        chart-dataset-override="PieDataSetOverride">
+                                </canvas>
+                            </div>
+                            
+                        </div>
+                    </section>
+                  
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</html>
